@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Search Form</h1>
+
+    <style>
+        form {
+            /* border: 1px dashed; */
+            max-width: 24rem;
+            /* top/bottom left/right */
+            margin: 0 auto;
+            display: flex;
+        }
+        input {
+            padding: 0.5rem;
+            flex-grow: 1;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+
+    <form action="#">
+        <input type="text" placeholder="Search Google">
+        <button type="submit">Submit</button>
+    </form> -->
+
+
+    <!-- <h1>Personal Form</h1>
+
+    <style>
+        form {
+            /* border: 1px dashed; */
+            margin: 0 auto;
+            max-width: 24rem;
+
+        }
+        label {
+            display: block;
+        }
+        input, select {
+            padding: 0.5rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .basis-50 {
+            flex-basis: 50%;
+        }
+        .ml-2 {
+            margin-left: 0.5rem;
+        }
+    </style>
+
+    <form action="#" autocomplete="off">
+        <h2>Personal Information</h2>
+        <div class="mb-2 flex">
+            <div class="flex-basis ">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Yang">
+            </div>
+            <div class="ml-2">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Ji-Un">
+            </div>
+        </div>
+        <div class="mb-2">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="yangjiun0314Gmail.com">
+        </div>
+        <div class="mb-2">
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="seoul">Seoul</option>
+                <option value="incheon">Incheon</option>
+                <option value="busan">Busan</option>
+            </select>
+        </div>
+
+        <button type="submit">Save</button>
+
+    </form> -->
+
+
+    <!-- <h1>Login Form</h1>
+
+    <style>
+        form {
+            /* border: 1px dashed; */
+            margin: auto;
+            max-width: 24rem;
+        }
+        h2 {
+            text-align: center;
+        }
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        label {
+            display: block;
+        }
+        input {
+            padding: 0.5rem;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 0.5rem;
+            width: 100%;
+            cursor: pointer;
+        }
+        .flex {
+            display: flex;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+    </style>
+
+    <form action="" autocomplete="off">
+        <h2>&#127760; Login</h2>
+
+        <div class="mb-2">
+            <label for="uname">Username</label>
+            <input type="text" id="uname">
+        </div>
+
+        <div class="mb-2">
+            <label for="pword">Password</label>
+            <div class="relative">
+                <input type="password" id="pword">
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <button type="submit">Login</button>
+        </div>
+
+        <div class="flex justify-between">
+           <a href="#">Sign Up</a>
+           <a href="#">Forgot Password?</a>
+        </div>
+    </form> -->
+
+
+    <!-- <h1>Table</h1>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            text-align: left;
+            caption-side: bottom;
+        }
+        td[scope=row] {
+            font-weight: bold;
+        }
+        thead tr {
+            border-bottom: 1px solid;
+        }
+        th, td {
+            padding: 0.5rem;
+        }
+        /* odd는 홀수행, even는 짝수행 */
+        tbody tr:nth-child(odd) {
+            background-color: #ddd;
+        }
+    </style>
+
+    <table>
+        <caption>* caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Oring</th>
+                <th scope="col">Avilable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Guiness</td>
+                <td>Ireland</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Heineken</td>
+                <td>Netherland</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>Budwiser</td>
+                <td>USA</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+    <!-- <h1>Dropdown</h1>
+
+    <style>
+        .container {
+            border: 1px dashed;
+            display: inline-block;
+        }
+        .container:hover ul {
+            display: block;
+        }
+        button {
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+            border: 1px solid #ddd;
+            display: none;
+            position: absolute;
+            background-color: #fff;
+        }
+        a {
+            display: block;
+            padding: 0.5rem;
+        }
+        a:hover {
+          background-color: #ddd;  
+        }
+    </style>
+
+    <div class="container">
+        <button>Dropdown</button>
+        <ul>
+            <li>
+                <a href="#">list item</a>
+            </li>
+            <li>
+                <a href="#">list item</a>
+            </li>
+            <li>
+                <a href="#">list item</a>
+            </li>
+        </ul>
+    </div>
+
+    <p>
+        Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+    </p> -->
+
+
+    <!-- <style>
+        body {
+            height: 1000px;
+        }
+        nav {
+            /* border: 1px dashed; */
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        a {
+            display: block;
+            padding: 0.5rem;
+        }
+        a:hover {
+            background-color: #ddd;
+        }
+        main {
+            margin-top: 4rem;
+        }
+    </style>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Nav Bar</h1>
+        <p>
+            Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+        </p>
+    </main> -->
+
+
+    <!-- <style>
+        body {
+            height: 1000px;
+        }
+        nav {
+            /* border: 1px dashed; */
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-list {
+            display: flex;
+        }
+
+        a {
+            display: block;
+            padding: 0.5rem;
+            color: #000;
+            text-decoration: none;
+        }
+        .menu-item:hover {
+            background-color: #eee;
+        }
+        .dropdown-container:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content {
+            display: none;
+            background-color: #fff;
+            position: absolute;
+            width: 200px;
+            border: 1px solid #ddd;
+        }
+        .dropdown-btn {
+            height: 100%;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            background-color: transparent;
+        }
+        main {
+            margin-top: 4rem;
+        }
+    </style>
+
+    <nav>
+        <ul class="menu-list">
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li class="dropdown-container">
+                <button class="dropdown-btn menu-item">Dropdown</button>
+                <ul class="dropdown-content">
+                    <li>
+                        <a href="#">list item</a>
+                    </li>
+                    <li>
+                        <a href="#">list item</a>
+                    </li>
+                    <li>
+                        <a href="#">list item</a>
+                    </li>
+                </ul>
+            </li>
+           
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Nav Bar with Sub Menu</h1>
+        <p>
+            Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+        </p>
+    </main> -->
+
+
+    <!-- <style>
+        body {
+            height: 1000px;
+        }
+        nav {
+            /* border: 1px dashed; */
+            border-right: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #fff;t
+            width: 16rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            /* display: flex; */
+        }
+        nav h1 {
+            text-align: center;
+        }
+        a {
+            display: block;
+            padding: 0.75rem;
+        }
+        a:hover {
+            background-color: #ddd;
+        }
+
+        main {
+            margin-left: 16rem;
+            padding: 0 1rem;
+            max-width: 1000px;
+        }
+    </style>
+
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Nav Bar</h1>
+        <p>
+            Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+        </p>
+    </main> -->
+
+
+    <!-- <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            border-bottom: 1px solid #ddd;
+        }
+        input[type=checkbox] {
+            display: none;
+        }
+        label {
+            display: block;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        label::after {
+            content: "+";
+            float: right;
+            transition: transform 0.2s;
+        }
+        input[type=checkbox]:checked ~label::after {
+            transform: rotate(45deg);
+        }
+        .content {
+            /* border: 1px dashed; */
+            max-height: 0;
+            overflow-y: hidden;
+            transition: max-height 0.2s;
+        }
+        input[type=checkbox]:checked ~ .content {
+            max-height: 8rem;
+        }
+    </style>
+
+    <h1>Accordion</h1>
+
+    <ul>
+        <li>
+            <input type="checkbox" name="" id="acc0">
+            <label for="acc0">Title</label>
+            <div class="content">
+                <p>
+                    Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="acc1">
+            <label for="acc1">Title</label>
+            <div class="content">
+                <p>
+                    Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="acc2">
+            <label for="acc2">Title</label>
+            <div class="content">
+                <p>
+                    Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+                </p>
+            </div>
+        </li>
+    </ul> -->
+    
+
+    <!-- <style>
+        .container {
+            border: 1px dashed;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        input[type=radio] {
+            display: none;
+        }
+       label {
+        padding: 0.5rem;
+        cursor: pointer;
+       }
+       p {
+        width: 100%;
+        display: none;
+        order: 1;
+       }
+       input[type=radio]:checked + label + p {
+        display: block;
+       }
+       input[type=radio]:checked +label {
+        font-weight: 600;
+        border-bottom: 2px solid;
+       }
+    </style>
+
+    <h1>Tab Content</h1>
+
+    <div class="container">
+        <input type="radio" name="rr" id="tab1">
+        <label for="tab1">Tab 1</label>
+        <p>
+            Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+
+        </p>
+
+
+        <input type="radio" name="rr" id="tab2">
+        <label for="tab2">Tab 2</label>
+        <p>
+            Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group. The d.
+
+        </p>
+ 
+
+        <input type="radio" name="rr" id="tab3">
+        <label for="tab3">Tab 3</label>
+        <p>
+            Specifies participation in first- or last-baseline alignment:
+
+        </p>
+    </div> -->
+
+
+    <!-- <style>
+        .modal {
+            padding: 1rem;
+            background-color: #fff;
+            max-width: 20rem;
+            margin: 100px auto 0;
+            border-radius: 1rem;
+            position: relative;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0 0 0 / 0.2);
+        }
+        button {
+            width: 100%;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+    </style>
+
+    <h1>Modal</h1>
+
+    <div class="overlay">
+        <div class="modal">
+            <h1>Heading</h1>
+            <p>
+                Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or
+                 last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in 
+                 its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+            </p>
+            <button type="button">
+                Close
+            </button>
+        </div>
+    </div> -->
+
+
+    <!-- <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 2rem;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+        h3 {
+            margin-left: 0.5rem;
+        }
+    </style>
+
+    <h1>Avatar</h1>
+
+    <div class="container">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/09zFfq433L08b/960x960.jpg?format=jpg&width=960" alt="kitty.jpg">
+        <h3>Kitty</h3>
+    </div> -->
+
+
+    <!-- <h1>Responsive image</h1>
+
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+    </style>
+
+    <img src="https://imageio.forbes.com/specials-images/imageserve/09zFfq433L08b/960x960.jpg?format=jpg&width=960" alt="kitty.jpg">
+
+ -->
+
+
+    <!-- <h1>Scalable Image</h1>
+    <style>
+        .container {
+            border: 1px solid #ddd;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .container:hover img{
+            transform: scale(1.1);
+        }
+    </style>
+    <div class="container">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/09zFfq433L08b/960x960.jpg?format=jpg&width=960" alt="kitty.jpg">
+    </div>
+    <h3>Kitty</h3> -->
+
+
+    <!-- <h1>Overlay on Image</h1>
+
+    <style>
+        .container {
+            border: 1px solid #ddd;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            position: relative;
+        }
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover; 
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            background-color: rgba(0 0 0 / 0.2);
+        }
+        .text-composer {
+            width: inherit;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .text {
+            color: #fff;
+        }
+    </style>
+
+    <div class="container">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*" alt="kitty.jpg">
+        <div class="overlay"> 
+            <div class="text-composer">
+                <p class="text">Text on overlay</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <h1>Main Image</h1>
+    <style>
+        img {
+            width: 100%;
+            height: 200px;
+        }
+        .container {
+            border: 1px solid #ddd;
+            height: 300px;
+            background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-composer {
+            width: inherit;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: stretch;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .text {
+            text-align: center;
+        }
+    </style>
+    <div class="container">
+        <div class="text-composer">
+            <h1 class="text">Specifies participation in first- or last-baseline alignment:
+               
+          </h1>
+        </div>
+    </div> -->
+
+
+    
+
+    <!-- <style>
+        .modal {
+            width: 20rem;
+            margin: 100px auto 0;
+            height: 20rem;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0 0 0 / 0.2);
+        }
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: 1.5rem;
+            object-fit: cover;
+        }
+        /* h1::after {
+            content: "+";
+            float: right;
+            transform: rotate(45deg);
+            color: white;
+        } */
+        button {
+            font-size: 2rem;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            float: right;
+        }
+    </style>
+<h1>Modal Image</h1>
+<div class="overlay">
+    <button>&times;</button>
+    <div class="modal">
+        
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.670xw:1.00xh;0.167xw,0&resize=640:*" alt="">
+    </div>
+</div> -->
+
+
+<!-- <h1>Spinner</h1>
+<style>
+    #spinner {
+        width: 3rem;
+        height: 3rem;
+        border: 4px solid;
+        border-top: 4px solid transparent;
+        border-radius: 50%;
+
+        animation-name: spin;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(720deg);
+        }
+    }
+</style>
+<div id="spinner"></div> -->
+
+
+<!-- <h1>Menu Button</h1>
+
+<style>
+    .bars {
+        width: 50px;
+        height: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bar {
+        width: inherit;
+        height: 4px;
+        background-color: #000;
+    }
+    .bars:hover .bar:first-child {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bars:hover .bar:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+</style>
+
+<div class="bars">
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div> -->
+
+
+<!-- <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background-color: #000;
+    }
+    #earth {
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+        border-radius: 50%;
+        /* box-shadow: 수평 수직 blur spread color inset; */
+        box-shadow: 0 0 40px 10px #00f inset;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #orbit-creator {
+        /* border: 1px dashed #fff; */
+        width: 200px;
+        height: 200px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        animation-name: move;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #moon {
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        box-shadow: 0 0 20px 5px #ddd;
+        border-radius: 50%;
+    }
+
+    @keyframes move {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+        } to {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+</style>
+<div id="earth"></div>
+
+<div id="orbit-creator">
+    <div id="moon"></div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

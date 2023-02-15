@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template1</title>
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+        }
+    </style>
+</head>
+
+<body class="bg-neutral-200">
+
+<!-- NAVBAR -->
+   <nav class="sticy top-0 p-2 w-full z-10 bg-black">
+    <ul class="flex">
+        <li class="w-1/4">
+            <a href="#" class="block p-2 text-center text-white hover:bg-white hover:text-black">HOME</a>
+        </li>
+        <li class="w-1/4">
+            <a href="#about" class="block p-2 text-center text-white hover:bg-white hover:text-black">ABOUT</a>
+        </li>
+        <li class="w-1/4">
+            <a href="#menu" class="block p-2 text-center text-white hover:bg-white hover:text-black">MENU</a>
+        </li>
+        <li class="w-1/4">
+            <a href="#where" class="block p-2 text-center text-white hover:bg-white hover:text-black">WHERE</a>
+        </li>
+    </ul>
+   </nav>
+
+   <!-- MAIN IMAGE -->
+   <div class="h-[500px] bg-[url('https://wallpapercave.com/wp/wp5578137.jpg')] bg-cover bg-center grayscale-[50%]">
+        <div class="h-[450px] flex flex-col justify-center">
+            <h1 class="text-8xl text-center text-white">
+                the <br>
+                <span class="inline-block mt-8">
+                    Cafe
+                </span>
+            </h1>
+        </div>
+        <div class="mt-4 px-4 flex justify-between">
+            <span class="bg-black text-sm text-white px-2 invisible md:visible">Open from 6am to 5pm</span>
+            <span class="bg-white text-sm text-black">15 Adr, street, 5015</span>
+        </div>
+   </div>
+
+   <main class="max-w-2xl mx-auto px-4">
+    <!-- ABOUT -->
+        <div id="about" class="py-16">
+            <h1 class="text-2xl text-center tracking-widest">
+                <span class="bg-black text-white px-2">ABOUT THE CAFE</span>
+            </h1>
+        </div>
+
+        <p class="text-lg my-4">
+            During the 200 years after the mid-17th century, the most famous coffeehouses of Europe flourished in London as ready points for news, discussion, and faction. Coffeehouse proprietors competed with each other for supplies of both Whig and Tory newspapers; during this time the business of buying and selling insurance, ships, stocks, commodities, and occasionally even slaves was disposed of in coffeehouses; a man of letters, an actor, or an artist might perform or declaim for his coterie in his favourite coffeehouse; and coffeehouses became informal stations for the collection and distribution of packets and letters. By the 19th century, the daily newspaper and the home post had displaced these functions.
+        </p>
+        <p class="text-lg my-4">
+            About the same time, as painting and literature attest, the French café and restaurant were at their zenith as gathering places for intellectuals and artists. The wealthier gourmands among the intelligentsia might dine in Paris’s high-toned restaurants, as Honoré de Balzac dined at the Véry, while the more modest café or bistro harboured the “Bohemian” artists. The café continued to be an important social institution in France throughout the 20th and early 21st centuries.
+        </p>
+
+        <div class="mt-8 px-4 py-2 bg-gary-200 border-l-8 border-l-gray-300">
+            <p class="my-4 text-lg italic">
+                "During the 200 years after the mid-17th century, the most famous coffeehouses of Europe flourished in London as ready points for news, discussion, and faction."
+            </p>
+            <p class="my-4 text-lg">
+                The Editors of Encyclopaedia Britannica  
+            </p>
+        </div>
+
+        <img class="mt-8 grayscale-[80%]" src="https://wallpapercave.com/wp/wp8508223.jpg" alt="">
+
+        <p class="my-4 text-lg">
+            <span class="font-semibold">Opening hours:</span>everyday from 6am to 5pm
+        </p>
+
+        <p class="my-4 text-lg">
+            <span class="font-semibold">Address:</span>15 Adr street, 5015, NY
+        </p>
+
+        <!-- MENU -->
+        <div id="menu" class="py-16">
+            <h1 class="text-2xl text-center tracking-widest">
+                <span class="bg-black text-white px-2">THE MENU</span>
+            </h1>
+        </div>
+
+        <div class="border bg-white shadow-lg flex flex-wrap px-4 py-2">
+            <input type="radio" class="hidden peer/eat" name="menu" id="eat" checked>
+            <label for="eat" class="w-1/2 text-lg text-center font-semibold cursor-pointer peer-checked/eat:bg-neutral-400 peer-checked/eat:text-white">
+                Eat
+            </label>
+
+            <input type="radio" class="hidden peer/drink" name="menu" id="drink">
+            <label for="drink" class="w-1/2 text-lg text-center font-semibold cursor-pointer peer-checked/drink:bg-neutral-400 peer-checked/drink:text-white">
+                Drink
+            </label>
+
+            <!-- MENU: Eat -->
+            <div class="py-4 w-full hidden peer-checked/eat:block">
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Bread Basket</h3>
+                    <p class="my-4 text-lg text-gray-500">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Honey Almond Granola with Fruits</h3>
+                    <p class="my-4 text-lg text-gray-500">Netural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Belgian Waffle</h3>
+                    <p class="my-4 text-lg text-gray-500">Vanilla flavored batter with malted flour 7.50</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Scrambled eggs</h3>
+                    <p class="my-4 text-lg text-gray-500">Scrambled eggs, roasted red pepper and galic, with green onions 7.50</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Blueberry Pancakes</h3>
+                    <p class="my-4 text-lg text-gray-500">With syrup, butter and lots of berries 8.50</p>
+                </div>
+            </div>
+
+            
+
+            <!-- MENU: Drink -->
+            <div class="py-4 w-full hidden peer-checked/drink:block">
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Coffee</h3>
+                    <p class="my-4 text-lg text-gray-500 mt-4">Regular coffee 2.50</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Chocolate</h3>
+                    <p class="my-4 text-lg text-gray-500 mt-4">Chocolate espresso with milk 4.50</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Corretto</h3>
+                    <p class="my-4 text-lg text-gray-500 mt-4">Whiskey and coffee 5.00</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Iced tea</h3>
+                    <p class="my-4 text-lg text-gray-500 mt-4">Hot tea, except not hot 3.00</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="my-4 text-xl font-semibold">Soda</h3>
+                    <p class="my-4 text-lg text-gray-500 mt-4">Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>
+            </div>
+        </div>
+
+        <img class="mt-8 grayscale-[80%]" src="https://wallpapercave.com/wp/wp9278197.jpg" alt="">
+
+
+        <!-- WHERE -->
+        <div id="where" class="py-16">
+            <h1 class="text-2xl text-center tracking-widest">
+                <span class="bg-black text-white px-2">WHERE TO FIND US</span>
+            </h1>
+        </div>
+
+        <p class="text-lg my-4">
+            Find us at address at some place
+        </p>
+
+        <img class="mt-4 grayscale-[80%]" src="https://wallpapercave.com/wp/wp8323080.jpg" alt="">
+
+
+        <p class="my-4 text-lg">
+            <span class="bg-black text-white px-2 py-1">FYI!</span>
+            About the same time, as painting and literature attest, the French café and restaurant were at their zenith as gathering places for intellectuals and artists. The wealthier gourmands among the intelligentsia might dine in Paris’s high-toned restaurants, as Honoré de Balzac dined at the Véry, while the more modest café or bistro harboured the “Bohemian” artists. The café continued to be an important social institution in France throughout the 20th and early 21st centuries.
+        </p>
+        
+
+
+        <form action="" class="">
+            <p class="my-4 text-lg">
+                Reserve a table, ask for today's special or just send us a messege:
+            </p>
+            <div class="mb-4">
+                <label>
+                    <input type="text" class="border text-lg px-2 py-4 w-full" placeholder="Name">
+                </label>
+            </div>
+            <div class="mb-4">
+                <label>
+                    <input type="number" class="border text-lg px-2 py-4 w-full" placeholder="How many people">
+                </label>
+            </div>
+            <div class="mb-4">
+                <label>
+                    <input type="date" class="border text-lg px-2 py-4 w-full" value="2023-01-16">
+                </label>
+            </div>
+            <div class="mb-4">
+                <label>
+                    <input type="text" class="border text-lg px-2 py-4 w-full" placeholder="Messege \ Special requiremnts">
+                </label>
+            </div>
+
+            <button class="bg-black text-lg text-white px-4 py-2 hover:bg-gray-400 hover:text-black">
+                Send Message
+            </button>
+        </form>
+
+   </main>
+
+   <!-- FOOTER -->
+   <footer class="mt-16 bg-gray-200 py-16">
+    <p class="text-center text-lg">
+        Powered by <a href="#" class="underline">YJU</a>
+    </p>
+   </footer>
+   
+</body>
+</html>
